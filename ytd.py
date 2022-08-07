@@ -22,7 +22,7 @@ while True:
         print('\nLoading available resolutions...\n')
 
         if frmt == 1:
-            videos = link.streams.filter(file_extension='mp4')
+            videos = link.streams.filter(file_extension='mp4', progressive=1)
             vid = list(enumerate(videos))
             for i in vid:
                 print(i)
